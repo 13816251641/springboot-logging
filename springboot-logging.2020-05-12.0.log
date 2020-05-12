@@ -1,0 +1,847 @@
+2020-05-12 13:38:31.433 [main] INFO  com.lujieni.logging.LoggingApplication - Starting LoggingApplication on DESKTOP-OHBCINO with PID 36364 (E:\IdeaWorkspace\springboot-logging\target\classes started by 181268 in E:\IdeaWorkspace\springboot-logging)
+2020-05-12 13:38:31.435 [main] INFO  com.lujieni.logging.LoggingApplication - No active profile set, falling back to default profiles: default
+2020-05-12 13:38:31.494 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@223f3642: startup date [Tue May 12 13:38:31 CST 2020]; root of context hierarchy
+2020-05-12 13:38:31.608 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+2020-05-12 13:38:32.665 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+2020-05-12 13:38:32.674 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-05-12 13:38:32.675 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.16
+2020-05-12 13:38:32.776 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-05-12 13:38:32.776 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1282 ms
+2020-05-12 13:38:32.924 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2020-05-12 13:38:32.928 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-05-12 13:38:32.929 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-05-12 13:38:32.929 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-05-12 13:38:32.929 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2020-05-12 13:38:33.481 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@223f3642: startup date [Tue May 12 13:38:31 CST 2020]; root of context hierarchy
+2020-05-12 13:38:33.522 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hello],methods=[GET]}" onto public java.lang.String com.lujieni.logging.controller.HelloController.hello()
+2020-05-12 13:38:33.523 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/v1/findStudentByName],methods=[GET]}" onto public java.util.List<com.lujieni.logging.domain.vo.StudentVO> com.lujieni.logging.controller.StudentController.findStudentByName()
+2020-05-12 13:38:33.527 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-05-12 13:38:33.528 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-05-12 13:38:33.555 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-12 13:38:33.555 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-12 13:38:33.582 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-12 13:38:33.845 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2020-05-12 13:38:33.861 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2020-05-12 13:38:33.870 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2020-05-12 13:38:33.880 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2020-05-12 13:38:33.894 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+2020-05-12 13:38:33.898 [main] INFO  com.lujieni.logging.LoggingApplication - Started LoggingApplication in 2.712 seconds (JVM running for 4.083)
+2020-05-12 13:38:40.672 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-05-12 13:38:40.672 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2020-05-12 13:38:40.695 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 23 ms
+2020-05-12 13:38:40.807 [http-nio-8080-exec-1] ERROR org.apache.tomcat.jdbc.pool.ConnectionPool - Unable to create initial connections of pool.
+java.sql.SQLException: null,  message from server: "Host 'DESKTOP-OHBCINO.OC.COM' is not allowed to connect to this MySQL server"
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:964)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:897)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:886)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1040)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2205)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2236)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2035)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:790)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:400)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connectUsingDriver(PooledConnection.java:310)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connect(PooledConnection.java:203)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.createConnection(ConnectionPool.java:735)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.borrowConnection(ConnectionPool.java:667)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.init(ConnectionPool.java:482)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.<init>(ConnectionPool.java:154)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.pCreatePool(DataSourceProxy.java:118)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.createPool(DataSourceProxy.java:107)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.getConnection(DataSourceProxy.java:131)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:111)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:77)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.openConnection(SpringManagedTransaction.java:82)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.getConnection(SpringManagedTransaction.java:68)
+	at org.apache.ibatis.executor.BaseExecutor.getConnection(BaseExecutor.java:336)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:84)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:62)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:324)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at com.github.pagehelper.PageInterceptor.intercept(PageInterceptor.java:142)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:61)
+	at com.sun.proxy.$Proxy79.query(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:148)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	at com.sun.proxy.$Proxy57.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:230)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:137)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:75)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59)
+	at com.sun.proxy.$Proxy64.findStudentByName(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:333)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:136)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:213)
+	at com.sun.proxy.$Proxy66.findStudentByName(Unknown Source)
+	at com.lujieni.logging.service.impl.StudentServiceImpl.findStudentByName(StudentServiceImpl.java:17)
+	at com.lujieni.logging.service.impl.StudentServiceImpl$$FastClassBySpringCGLIB$$af60e21d.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:669)
+	at com.lujieni.logging.service.impl.StudentServiceImpl$$EnhancerBySpringCGLIB$$72384d6a.findStudentByName(<generated>)
+	at com.lujieni.logging.controller.StudentController.findStudentByName(StudentController.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-05-12 13:38:40.821 [http-nio-8080-exec-1] ERROR o.a.c.c.C.[.[localhost].[/].[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is java.sql.SQLException: null,  message from server: "Host 'DESKTOP-OHBCINO.OC.COM' is not allowed to connect to this MySQL server"
+### The error may exist in com/lujieni/logging/dao/StudentDao.xml
+### The error may involve com.lujieni.logging.dao.StudentDao.findStudentByName
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is java.sql.SQLException: null,  message from server: "Host 'DESKTOP-OHBCINO.OC.COM' is not allowed to connect to this MySQL server"] with root cause
+java.sql.SQLException: null,  message from server: "Host 'DESKTOP-OHBCINO.OC.COM' is not allowed to connect to this MySQL server"
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:964)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:897)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:886)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1040)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2205)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2236)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2035)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:790)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:400)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connectUsingDriver(PooledConnection.java:310)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connect(PooledConnection.java:203)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.createConnection(ConnectionPool.java:735)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.borrowConnection(ConnectionPool.java:667)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.init(ConnectionPool.java:482)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.<init>(ConnectionPool.java:154)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.pCreatePool(DataSourceProxy.java:118)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.createPool(DataSourceProxy.java:107)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.getConnection(DataSourceProxy.java:131)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:111)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:77)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.openConnection(SpringManagedTransaction.java:82)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.getConnection(SpringManagedTransaction.java:68)
+	at org.apache.ibatis.executor.BaseExecutor.getConnection(BaseExecutor.java:336)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:84)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:62)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:324)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at com.github.pagehelper.PageInterceptor.intercept(PageInterceptor.java:142)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:61)
+	at com.sun.proxy.$Proxy79.query(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:148)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	at com.sun.proxy.$Proxy57.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:230)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:137)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:75)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59)
+	at com.sun.proxy.$Proxy64.findStudentByName(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:333)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:136)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:213)
+	at com.sun.proxy.$Proxy66.findStudentByName(Unknown Source)
+	at com.lujieni.logging.service.impl.StudentServiceImpl.findStudentByName(StudentServiceImpl.java:17)
+	at com.lujieni.logging.service.impl.StudentServiceImpl$$FastClassBySpringCGLIB$$af60e21d.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:669)
+	at com.lujieni.logging.service.impl.StudentServiceImpl$$EnhancerBySpringCGLIB$$72384d6a.findStudentByName(<generated>)
+	at com.lujieni.logging.controller.StudentController.findStudentByName(StudentController.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-05-12 13:38:41.947 [http-nio-8080-exec-3] ERROR org.apache.tomcat.jdbc.pool.ConnectionPool - Unable to create initial connections of pool.
+java.sql.SQLException: null,  message from server: "Host 'DESKTOP-OHBCINO.OC.COM' is not allowed to connect to this MySQL server"
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:964)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:897)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:886)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1040)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2205)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2236)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2035)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:790)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:400)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connectUsingDriver(PooledConnection.java:310)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connect(PooledConnection.java:203)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.createConnection(ConnectionPool.java:735)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.borrowConnection(ConnectionPool.java:667)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.init(ConnectionPool.java:482)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.<init>(ConnectionPool.java:154)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.pCreatePool(DataSourceProxy.java:118)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.createPool(DataSourceProxy.java:107)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.getConnection(DataSourceProxy.java:131)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:111)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:77)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.openConnection(SpringManagedTransaction.java:82)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.getConnection(SpringManagedTransaction.java:68)
+	at org.apache.ibatis.executor.BaseExecutor.getConnection(BaseExecutor.java:336)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:84)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:62)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:324)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at com.github.pagehelper.PageInterceptor.intercept(PageInterceptor.java:142)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:61)
+	at com.sun.proxy.$Proxy79.query(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:148)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	at com.sun.proxy.$Proxy57.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:230)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:137)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:75)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59)
+	at com.sun.proxy.$Proxy64.findStudentByName(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:333)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:136)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:213)
+	at com.sun.proxy.$Proxy66.findStudentByName(Unknown Source)
+	at com.lujieni.logging.service.impl.StudentServiceImpl.findStudentByName(StudentServiceImpl.java:17)
+	at com.lujieni.logging.service.impl.StudentServiceImpl$$FastClassBySpringCGLIB$$af60e21d.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:669)
+	at com.lujieni.logging.service.impl.StudentServiceImpl$$EnhancerBySpringCGLIB$$72384d6a.findStudentByName(<generated>)
+	at com.lujieni.logging.controller.StudentController.findStudentByName(StudentController.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-05-12 13:38:41.949 [http-nio-8080-exec-3] ERROR o.a.c.c.C.[.[localhost].[/].[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is java.sql.SQLException: null,  message from server: "Host 'DESKTOP-OHBCINO.OC.COM' is not allowed to connect to this MySQL server"
+### The error may exist in com/lujieni/logging/dao/StudentDao.xml
+### The error may involve com.lujieni.logging.dao.StudentDao.findStudentByName
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is java.sql.SQLException: null,  message from server: "Host 'DESKTOP-OHBCINO.OC.COM' is not allowed to connect to this MySQL server"] with root cause
+java.sql.SQLException: null,  message from server: "Host 'DESKTOP-OHBCINO.OC.COM' is not allowed to connect to this MySQL server"
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:964)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:897)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:886)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1040)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2205)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2236)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2035)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:790)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:400)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connectUsingDriver(PooledConnection.java:310)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connect(PooledConnection.java:203)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.createConnection(ConnectionPool.java:735)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.borrowConnection(ConnectionPool.java:667)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.init(ConnectionPool.java:482)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.<init>(ConnectionPool.java:154)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.pCreatePool(DataSourceProxy.java:118)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.createPool(DataSourceProxy.java:107)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.getConnection(DataSourceProxy.java:131)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:111)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:77)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.openConnection(SpringManagedTransaction.java:82)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.getConnection(SpringManagedTransaction.java:68)
+	at org.apache.ibatis.executor.BaseExecutor.getConnection(BaseExecutor.java:336)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:84)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:62)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:324)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at com.github.pagehelper.PageInterceptor.intercept(PageInterceptor.java:142)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:61)
+	at com.sun.proxy.$Proxy79.query(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:148)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	at com.sun.proxy.$Proxy57.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:230)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:137)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:75)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59)
+	at com.sun.proxy.$Proxy64.findStudentByName(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:333)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:136)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:213)
+	at com.sun.proxy.$Proxy66.findStudentByName(Unknown Source)
+	at com.lujieni.logging.service.impl.StudentServiceImpl.findStudentByName(StudentServiceImpl.java:17)
+	at com.lujieni.logging.service.impl.StudentServiceImpl$$FastClassBySpringCGLIB$$af60e21d.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:669)
+	at com.lujieni.logging.service.impl.StudentServiceImpl$$EnhancerBySpringCGLIB$$72384d6a.findStudentByName(<generated>)
+	at com.lujieni.logging.controller.StudentController.findStudentByName(StudentController.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-05-12 13:47:12.889 [http-nio-8080-exec-6] DEBUG c.lujieni.logging.dao.StudentDao.findStudentByName - ==>  Preparing: SELECT id, name, age, gender from t_student where name = ? 
+2020-05-12 13:47:12.906 [http-nio-8080-exec-6] DEBUG c.lujieni.logging.dao.StudentDao.findStudentByName - ==> Parameters: 陆捷旎(String)
+2020-05-12 13:47:12.915 [http-nio-8080-exec-6] DEBUG c.lujieni.logging.dao.StudentDao.findStudentByName - <==      Total: 1
+2020-05-12 13:47:14.113 [http-nio-8080-exec-8] DEBUG c.lujieni.logging.dao.StudentDao.findStudentByName - ==>  Preparing: SELECT id, name, age, gender from t_student where name = ? 
+2020-05-12 13:47:14.114 [http-nio-8080-exec-8] DEBUG c.lujieni.logging.dao.StudentDao.findStudentByName - ==> Parameters: 陆捷旎(String)
+2020-05-12 13:47:14.115 [http-nio-8080-exec-8] DEBUG c.lujieni.logging.dao.StudentDao.findStudentByName - <==      Total: 1
+2020-05-12 13:47:14.601 [http-nio-8080-exec-10] DEBUG c.lujieni.logging.dao.StudentDao.findStudentByName - ==>  Preparing: SELECT id, name, age, gender from t_student where name = ? 
+2020-05-12 13:47:14.602 [http-nio-8080-exec-10] DEBUG c.lujieni.logging.dao.StudentDao.findStudentByName - ==> Parameters: 陆捷旎(String)
+2020-05-12 13:47:14.603 [http-nio-8080-exec-10] DEBUG c.lujieni.logging.dao.StudentDao.findStudentByName - <==      Total: 1
+2020-05-12 13:47:14.874 [http-nio-8080-exec-2] DEBUG c.lujieni.logging.dao.StudentDao.findStudentByName - ==>  Preparing: SELECT id, name, age, gender from t_student where name = ? 
+2020-05-12 13:47:14.874 [http-nio-8080-exec-2] DEBUG c.lujieni.logging.dao.StudentDao.findStudentByName - ==> Parameters: 陆捷旎(String)
+2020-05-12 13:47:14.876 [http-nio-8080-exec-2] DEBUG c.lujieni.logging.dao.StudentDao.findStudentByName - <==      Total: 1
+2020-05-12 15:19:06.924 [main] INFO  com.lujieni.logging.LoggingApplication - Starting LoggingApplication on DESKTOP-OHBCINO with PID 9756 (E:\IdeaWorkspace\springboot-logging\target\classes started by 181268 in E:\IdeaWorkspace\springboot-logging)
+2020-05-12 15:19:06.928 [main] INFO  com.lujieni.logging.LoggingApplication - No active profile set, falling back to default profiles: default
+2020-05-12 15:19:06.996 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4d518b32: startup date [Tue May 12 15:19:06 CST 2020]; root of context hierarchy
+2020-05-12 15:19:07.113 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+2020-05-12 15:19:08.930 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+2020-05-12 15:19:08.942 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-05-12 15:19:08.943 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.16
+2020-05-12 15:19:09.093 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-05-12 15:19:09.094 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2098 ms
+2020-05-12 15:19:09.476 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2020-05-12 15:19:09.482 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-05-12 15:19:09.483 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-05-12 15:19:09.483 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-05-12 15:19:09.484 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2020-05-12 15:19:10.339 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4d518b32: startup date [Tue May 12 15:19:06 CST 2020]; root of context hierarchy
+2020-05-12 15:19:10.400 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hello],methods=[GET]}" onto public java.lang.String com.lujieni.logging.controller.HelloController.hello()
+2020-05-12 15:19:10.402 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/v1/findStudentByName],methods=[GET]}" onto public java.util.List<com.lujieni.logging.domain.vo.StudentVO> com.lujieni.logging.controller.StudentController.findStudentByName()
+2020-05-12 15:19:10.407 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-05-12 15:19:10.407 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-05-12 15:19:10.444 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-12 15:19:10.444 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-12 15:19:10.487 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-12 15:19:10.958 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2020-05-12 15:19:10.975 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2020-05-12 15:19:10.985 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2020-05-12 15:19:10.998 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2020-05-12 15:19:11.015 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+2020-05-12 15:19:11.020 [main] INFO  com.lujieni.logging.LoggingApplication - Started LoggingApplication in 4.45 seconds (JVM running for 6.166)
+2020-05-12 15:19:28.452 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-05-12 15:19:28.452 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2020-05-12 15:19:28.483 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 31 ms
+2020-05-12 15:19:28.835 [http-nio-8080-exec-1] DEBUG c.lujieni.logging.dao.StudentDao.findStudentByName - ==>  Preparing: SELECT id, name, age, gender from t_student where name = ? 
+2020-05-12 15:19:28.854 [http-nio-8080-exec-1] DEBUG c.lujieni.logging.dao.StudentDao.findStudentByName - ==> Parameters: 陆捷旎(String)
+2020-05-12 15:19:28.867 [http-nio-8080-exec-1] DEBUG c.lujieni.logging.dao.StudentDao.findStudentByName - <==      Total: 1
+2020-05-12 15:19:35.841 [Thread-9] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4d518b32: startup date [Tue May 12 15:19:06 CST 2020]; root of context hierarchy
+2020-05-12 15:19:35.843 [Thread-9] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2020-05-12 15:21:11.945 [main] INFO  com.lujieni.logging.LoggingApplication - Starting LoggingApplication on DESKTOP-OHBCINO with PID 9552 (E:\IdeaWorkspace\springboot-logging\target\classes started by 181268 in E:\IdeaWorkspace\springboot-logging)
+2020-05-12 15:21:11.949 [main] INFO  com.lujieni.logging.LoggingApplication - No active profile set, falling back to default profiles: default
+2020-05-12 15:21:12.010 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4d518b32: startup date [Tue May 12 15:21:12 CST 2020]; root of context hierarchy
+2020-05-12 15:21:12.130 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+2020-05-12 15:21:13.393 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+2020-05-12 15:21:13.403 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-05-12 15:21:13.404 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.16
+2020-05-12 15:21:13.514 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-05-12 15:21:13.515 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1505 ms
+2020-05-12 15:21:13.724 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2020-05-12 15:21:13.733 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-05-12 15:21:13.734 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-05-12 15:21:13.734 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-05-12 15:21:13.734 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2020-05-12 15:21:13.734 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'logFilter' to: [/*]
+2020-05-12 15:21:14.502 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4d518b32: startup date [Tue May 12 15:21:12 CST 2020]; root of context hierarchy
+2020-05-12 15:21:14.560 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hello],methods=[GET]}" onto public java.lang.String com.lujieni.logging.controller.HelloController.hello()
+2020-05-12 15:21:14.561 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/v1/findStudentByName],methods=[GET]}" onto public java.util.List<com.lujieni.logging.domain.vo.StudentVO> com.lujieni.logging.controller.StudentController.findStudentByName()
+2020-05-12 15:21:14.565 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-05-12 15:21:14.566 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-05-12 15:21:14.600 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-12 15:21:14.600 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-12 15:21:14.642 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-12 15:21:15.123 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2020-05-12 15:21:15.145 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2020-05-12 15:21:15.156 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2020-05-12 15:21:15.170 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2020-05-12 15:21:15.190 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+2020-05-12 15:21:15.195 [main] INFO  com.lujieni.logging.LoggingApplication - Started LoggingApplication in 3.568 seconds (JVM running for 5.173)
+2020-05-12 15:21:19.442 [http-nio-8080-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-05-12 15:21:19.443 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2020-05-12 15:21:19.471 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 28 ms
+2020-05-12 15:21:19.803 [http-nio-8080-exec-2] DEBUG c.lujieni.logging.dao.StudentDao.findStudentByName - ==>  Preparing: SELECT id, name, age, gender from t_student where name = ? 
+2020-05-12 15:21:19.822 [http-nio-8080-exec-2] DEBUG c.lujieni.logging.dao.StudentDao.findStudentByName - ==> Parameters: 陆捷旎(String)
+2020-05-12 15:21:19.833 [http-nio-8080-exec-2] DEBUG c.lujieni.logging.dao.StudentDao.findStudentByName - <==      Total: 1
+2020-05-12 15:21:19.900 [http-nio-8080-exec-2] INFO  com.lujieni.logging.filter.LogFilter - Inbound Message
+----------------------------
+Address: http://localhost:8080/v1/findStudentByName
+QueryString: null
+RequestDate: 2020-05-12 15:21:19
+Encoding: UTF-8
+Content-Type: null
+Headers: {host=[localhost:8080], connection=[keep-alive], cache-control=[max-age=0], upgrade-insecure-requests=[1], user-agent=[Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36], accept=[text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9], sec-fetch-site=[none], sec-fetch-mode=[navigate], sec-fetch-user=[?1], sec-fetch-dest=[document], accept-encoding=[gzip, deflate, br], accept-language=[zh-CN,zh;q=0.9], cookie=[Webstorm-e000a0d0=6b21c971-d5a9-4bf4-80ea-c346503800c8; language=zh-CN; hasGreet=1; JSESSIONID=6B88978C3C667896E16B248CBF71F5C7]}
+Payload: 
+----------------------------------------------
+2020-05-12 15:21:19.900 [http-nio-8080-exec-2] INFO  com.lujieni.logging.filter.LogFilter - Outbound Message
+----------------------------
+ResponseDate: 2020-05-12 15:21:19
+Encoding: UTF-8
+Content-Type: application/json;charset=UTF-8
+Headers: {}
+Payload: [{"id":16,"name":"陆捷旎","age":18,"gender":"男"}]
+----------------------------------------------
+2020-05-12 15:21:19.944 [http-nio-8080-exec-1] INFO  com.lujieni.logging.filter.LogFilter - Inbound Message
+----------------------------
+Address: http://localhost:8080/favicon.ico
+QueryString: null
+RequestDate: 2020-05-12 15:21:19
+Encoding: UTF-8
+Content-Type: null
+Headers: {host=[localhost:8080], connection=[keep-alive], pragma=[no-cache], cache-control=[no-cache], user-agent=[Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36], accept=[image/webp,image/apng,image/*,*/*;q=0.8], sec-fetch-site=[same-origin], sec-fetch-mode=[no-cors], sec-fetch-dest=[empty], referer=[http://localhost:8080/v1/findStudentByName], accept-encoding=[gzip, deflate, br], accept-language=[zh-CN,zh;q=0.9], cookie=[Webstorm-e000a0d0=6b21c971-d5a9-4bf4-80ea-c346503800c8; language=zh-CN; hasGreet=1; JSESSIONID=6B88978C3C667896E16B248CBF71F5C7]}
+Payload: 
+----------------------------------------------
+2020-05-12 15:21:19.945 [http-nio-8080-exec-1] INFO  com.lujieni.logging.filter.LogFilter - Outbound Message
+----------------------------
+ResponseDate: 2020-05-12 15:21:19
+Encoding: ISO-8859-1
+Content-Type: application/octet-stream
+Headers: {}
+----------------------------------------------
+2020-05-12 15:21:21.361 [http-nio-8080-exec-3] DEBUG c.lujieni.logging.dao.StudentDao.findStudentByName - ==>  Preparing: SELECT id, name, age, gender from t_student where name = ? 
+2020-05-12 15:21:21.362 [http-nio-8080-exec-3] DEBUG c.lujieni.logging.dao.StudentDao.findStudentByName - ==> Parameters: 陆捷旎(String)
+2020-05-12 15:21:21.363 [http-nio-8080-exec-3] DEBUG c.lujieni.logging.dao.StudentDao.findStudentByName - <==      Total: 1
+2020-05-12 15:21:21.365 [http-nio-8080-exec-3] INFO  com.lujieni.logging.filter.LogFilter - Inbound Message
+----------------------------
+Address: http://localhost:8080/v1/findStudentByName
+QueryString: null
+RequestDate: 2020-05-12 15:21:21
+Encoding: UTF-8
+Content-Type: null
+Headers: {host=[localhost:8080], connection=[keep-alive], cache-control=[max-age=0], upgrade-insecure-requests=[1], user-agent=[Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36], accept=[text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9], sec-fetch-site=[none], sec-fetch-mode=[navigate], sec-fetch-user=[?1], sec-fetch-dest=[document], accept-encoding=[gzip, deflate, br], accept-language=[zh-CN,zh;q=0.9], cookie=[Webstorm-e000a0d0=6b21c971-d5a9-4bf4-80ea-c346503800c8; language=zh-CN; hasGreet=1; JSESSIONID=6B88978C3C667896E16B248CBF71F5C7]}
+Payload: 
+----------------------------------------------
+2020-05-12 15:21:21.365 [http-nio-8080-exec-3] INFO  com.lujieni.logging.filter.LogFilter - Outbound Message
+----------------------------
+ResponseDate: 2020-05-12 15:21:21
+Encoding: UTF-8
+Content-Type: application/json;charset=UTF-8
+Headers: {}
+Payload: [{"id":16,"name":"陆捷旎","age":18,"gender":"男"}]
+----------------------------------------------
+2020-05-12 15:21:21.397 [http-nio-8080-exec-4] INFO  com.lujieni.logging.filter.LogFilter - Inbound Message
+----------------------------
+Address: http://localhost:8080/favicon.ico
+QueryString: null
+RequestDate: 2020-05-12 15:21:21
+Encoding: UTF-8
+Content-Type: null
+Headers: {host=[localhost:8080], connection=[keep-alive], pragma=[no-cache], cache-control=[no-cache], user-agent=[Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36], accept=[image/webp,image/apng,image/*,*/*;q=0.8], sec-fetch-site=[same-origin], sec-fetch-mode=[no-cors], sec-fetch-dest=[empty], referer=[http://localhost:8080/v1/findStudentByName], accept-encoding=[gzip, deflate, br], accept-language=[zh-CN,zh;q=0.9], cookie=[Webstorm-e000a0d0=6b21c971-d5a9-4bf4-80ea-c346503800c8; language=zh-CN; hasGreet=1; JSESSIONID=6B88978C3C667896E16B248CBF71F5C7]}
+Payload: 
+----------------------------------------------
+2020-05-12 15:21:21.397 [http-nio-8080-exec-4] INFO  com.lujieni.logging.filter.LogFilter - Outbound Message
+----------------------------
+ResponseDate: 2020-05-12 15:21:21
+Encoding: ISO-8859-1
+Content-Type: application/octet-stream
+Headers: {}
+----------------------------------------------
+2020-05-12 15:21:29.992 [http-nio-8080-exec-6] DEBUG c.lujieni.logging.dao.StudentDao.findStudentByName - ==>  Preparing: SELECT id, name, age, gender from t_student where name = ? 
+2020-05-12 15:21:29.993 [http-nio-8080-exec-6] DEBUG c.lujieni.logging.dao.StudentDao.findStudentByName - ==> Parameters: 陆捷旎(String)
+2020-05-12 15:21:29.994 [http-nio-8080-exec-6] DEBUG c.lujieni.logging.dao.StudentDao.findStudentByName - <==      Total: 1
+2020-05-12 15:21:29.996 [http-nio-8080-exec-6] INFO  com.lujieni.logging.filter.LogFilter - Inbound Message
+----------------------------
+Address: http://localhost:8080/v1/findStudentByName
+QueryString: null
+RequestDate: 2020-05-12 15:21:29
+Encoding: UTF-8
+Content-Type: null
+Headers: {host=[localhost:8080], connection=[keep-alive], cache-control=[max-age=0], upgrade-insecure-requests=[1], user-agent=[Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36], accept=[text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9], sec-fetch-site=[none], sec-fetch-mode=[navigate], sec-fetch-user=[?1], sec-fetch-dest=[document], accept-encoding=[gzip, deflate, br], accept-language=[zh-CN,zh;q=0.9], cookie=[Webstorm-e000a0d0=6b21c971-d5a9-4bf4-80ea-c346503800c8; language=zh-CN; hasGreet=1; JSESSIONID=6B88978C3C667896E16B248CBF71F5C7]}
+Payload: 
+----------------------------------------------
+2020-05-12 15:21:29.996 [http-nio-8080-exec-6] INFO  com.lujieni.logging.filter.LogFilter - Outbound Message
+----------------------------
+ResponseDate: 2020-05-12 15:21:29
+Encoding: UTF-8
+Content-Type: application/json;charset=UTF-8
+Headers: {}
+Payload: [{"id":16,"name":"陆捷旎","age":18,"gender":"男"}]
+----------------------------------------------
+2020-05-12 15:21:30.026 [http-nio-8080-exec-7] INFO  com.lujieni.logging.filter.LogFilter - Inbound Message
+----------------------------
+Address: http://localhost:8080/favicon.ico
+QueryString: null
+RequestDate: 2020-05-12 15:21:30
+Encoding: UTF-8
+Content-Type: null
+Headers: {host=[localhost:8080], connection=[keep-alive], pragma=[no-cache], cache-control=[no-cache], user-agent=[Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36], accept=[image/webp,image/apng,image/*,*/*;q=0.8], sec-fetch-site=[same-origin], sec-fetch-mode=[no-cors], sec-fetch-dest=[empty], referer=[http://localhost:8080/v1/findStudentByName], accept-encoding=[gzip, deflate, br], accept-language=[zh-CN,zh;q=0.9], cookie=[Webstorm-e000a0d0=6b21c971-d5a9-4bf4-80ea-c346503800c8; language=zh-CN; hasGreet=1; JSESSIONID=6B88978C3C667896E16B248CBF71F5C7]}
+Payload: 
+----------------------------------------------
+2020-05-12 15:21:30.026 [http-nio-8080-exec-7] INFO  com.lujieni.logging.filter.LogFilter - Outbound Message
+----------------------------
+ResponseDate: 2020-05-12 15:21:30
+Encoding: ISO-8859-1
+Content-Type: application/octet-stream
+Headers: {}
+----------------------------------------------
+2020-05-12 15:21:34.548 [http-nio-8080-exec-8] DEBUG c.lujieni.logging.dao.StudentDao.findStudentByName - ==>  Preparing: SELECT id, name, age, gender from t_student where name = ? 
+2020-05-12 15:21:34.549 [http-nio-8080-exec-8] DEBUG c.lujieni.logging.dao.StudentDao.findStudentByName - ==> Parameters: 陆捷旎(String)
+2020-05-12 15:21:34.551 [http-nio-8080-exec-8] DEBUG c.lujieni.logging.dao.StudentDao.findStudentByName - <==      Total: 1
+2020-05-12 15:21:34.553 [http-nio-8080-exec-8] INFO  com.lujieni.logging.filter.LogFilter - Inbound Message
+----------------------------
+Address: http://localhost:8080/v1/findStudentByName
+QueryString: null
+RequestDate: 2020-05-12 15:21:34
+Encoding: UTF-8
+Content-Type: null
+Headers: {host=[localhost:8080], connection=[keep-alive], cache-control=[max-age=0], upgrade-insecure-requests=[1], user-agent=[Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36], accept=[text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9], sec-fetch-site=[none], sec-fetch-mode=[navigate], sec-fetch-user=[?1], sec-fetch-dest=[document], accept-encoding=[gzip, deflate, br], accept-language=[zh-CN,zh;q=0.9], cookie=[Webstorm-e000a0d0=6b21c971-d5a9-4bf4-80ea-c346503800c8; language=zh-CN; hasGreet=1; JSESSIONID=6B88978C3C667896E16B248CBF71F5C7]}
+Payload: 
+----------------------------------------------
+2020-05-12 15:21:34.553 [http-nio-8080-exec-8] INFO  com.lujieni.logging.filter.LogFilter - Outbound Message
+----------------------------
+ResponseDate: 2020-05-12 15:21:34
+Encoding: UTF-8
+Content-Type: application/json;charset=UTF-8
+Headers: {}
+Payload: [{"id":16,"name":"陆捷旎","age":18,"gender":"男"}]
+----------------------------------------------
+2020-05-12 15:21:34.580 [http-nio-8080-exec-9] INFO  com.lujieni.logging.filter.LogFilter - Inbound Message
+----------------------------
+Address: http://localhost:8080/favicon.ico
+QueryString: null
+RequestDate: 2020-05-12 15:21:34
+Encoding: UTF-8
+Content-Type: null
+Headers: {host=[localhost:8080], connection=[keep-alive], pragma=[no-cache], cache-control=[no-cache], user-agent=[Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36], accept=[image/webp,image/apng,image/*,*/*;q=0.8], sec-fetch-site=[same-origin], sec-fetch-mode=[no-cors], sec-fetch-dest=[empty], referer=[http://localhost:8080/v1/findStudentByName], accept-encoding=[gzip, deflate, br], accept-language=[zh-CN,zh;q=0.9], cookie=[Webstorm-e000a0d0=6b21c971-d5a9-4bf4-80ea-c346503800c8; language=zh-CN; hasGreet=1; JSESSIONID=6B88978C3C667896E16B248CBF71F5C7]}
+Payload: 
+----------------------------------------------
+2020-05-12 15:21:34.581 [http-nio-8080-exec-9] INFO  com.lujieni.logging.filter.LogFilter - Outbound Message
+----------------------------
+ResponseDate: 2020-05-12 15:21:34
+Encoding: ISO-8859-1
+Content-Type: application/octet-stream
+Headers: {}
+----------------------------------------------
+2020-05-12 15:21:41.088 [http-nio-8080-exec-2] DEBUG c.lujieni.logging.dao.StudentDao.findStudentByName - ==>  Preparing: SELECT id, name, age, gender from t_student where name = ? 
+2020-05-12 15:21:41.089 [http-nio-8080-exec-2] DEBUG c.lujieni.logging.dao.StudentDao.findStudentByName - ==> Parameters: 陆捷旎(String)
+2020-05-12 15:21:41.090 [http-nio-8080-exec-2] DEBUG c.lujieni.logging.dao.StudentDao.findStudentByName - <==      Total: 1
+2020-05-12 15:21:41.091 [http-nio-8080-exec-2] INFO  com.lujieni.logging.filter.LogFilter - Inbound Message
+----------------------------
+Address: http://localhost:8080/v1/findStudentByName
+QueryString: null
+RequestDate: 2020-05-12 15:21:41
+Encoding: UTF-8
+Content-Type: null
+Headers: {host=[localhost:8080], connection=[keep-alive], cache-control=[max-age=0], upgrade-insecure-requests=[1], user-agent=[Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36], accept=[text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9], sec-fetch-site=[none], sec-fetch-mode=[navigate], sec-fetch-user=[?1], sec-fetch-dest=[document], accept-encoding=[gzip, deflate, br], accept-language=[zh-CN,zh;q=0.9], cookie=[Webstorm-e000a0d0=6b21c971-d5a9-4bf4-80ea-c346503800c8; language=zh-CN; hasGreet=1; JSESSIONID=6B88978C3C667896E16B248CBF71F5C7]}
+Payload: 
+----------------------------------------------
+2020-05-12 15:21:41.092 [http-nio-8080-exec-2] INFO  com.lujieni.logging.filter.LogFilter - Outbound Message
+----------------------------
+ResponseDate: 2020-05-12 15:21:41
+Encoding: UTF-8
+Content-Type: application/json;charset=UTF-8
+Headers: {}
+Payload: [{"id":16,"name":"陆捷旎","age":18,"gender":"男"}]
+----------------------------------------------
+2020-05-12 15:21:41.119 [http-nio-8080-exec-1] INFO  com.lujieni.logging.filter.LogFilter - Inbound Message
+----------------------------
+Address: http://localhost:8080/favicon.ico
+QueryString: null
+RequestDate: 2020-05-12 15:21:41
+Encoding: UTF-8
+Content-Type: null
+Headers: {host=[localhost:8080], connection=[keep-alive], pragma=[no-cache], cache-control=[no-cache], user-agent=[Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36], accept=[image/webp,image/apng,image/*,*/*;q=0.8], sec-fetch-site=[same-origin], sec-fetch-mode=[no-cors], sec-fetch-dest=[empty], referer=[http://localhost:8080/v1/findStudentByName], accept-encoding=[gzip, deflate, br], accept-language=[zh-CN,zh;q=0.9], cookie=[Webstorm-e000a0d0=6b21c971-d5a9-4bf4-80ea-c346503800c8; language=zh-CN; hasGreet=1; JSESSIONID=6B88978C3C667896E16B248CBF71F5C7]}
+Payload: 
+----------------------------------------------
+2020-05-12 15:21:41.120 [http-nio-8080-exec-1] INFO  com.lujieni.logging.filter.LogFilter - Outbound Message
+----------------------------
+ResponseDate: 2020-05-12 15:21:41
+Encoding: ISO-8859-1
+Content-Type: application/octet-stream
+Headers: {}
+----------------------------------------------
+2020-05-12 15:22:31.935 [http-nio-8080-exec-4] DEBUG c.lujieni.logging.dao.StudentDao.findStudentByName - ==>  Preparing: SELECT id, name, age, gender from t_student where name = ? 
+2020-05-12 15:22:31.936 [http-nio-8080-exec-4] DEBUG c.lujieni.logging.dao.StudentDao.findStudentByName - ==> Parameters: 陆捷旎(String)
+2020-05-12 15:22:31.937 [http-nio-8080-exec-4] DEBUG c.lujieni.logging.dao.StudentDao.findStudentByName - <==      Total: 1
+2020-05-12 15:22:31.939 [http-nio-8080-exec-4] INFO  com.lujieni.logging.filter.LogFilter - Inbound Message
+----------------------------
+Address: http://localhost:8080/v1/findStudentByName
+QueryString: null
+RequestDate: 2020-05-12 15:22:31
+Encoding: UTF-8
+Content-Type: null
+Headers: {host=[localhost:8080], connection=[keep-alive], cache-control=[max-age=0], upgrade-insecure-requests=[1], user-agent=[Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36], accept=[text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9], sec-fetch-site=[none], sec-fetch-mode=[navigate], sec-fetch-user=[?1], sec-fetch-dest=[document], accept-encoding=[gzip, deflate, br], accept-language=[zh-CN,zh;q=0.9], cookie=[Webstorm-e000a0d0=6b21c971-d5a9-4bf4-80ea-c346503800c8; language=zh-CN; hasGreet=1; JSESSIONID=6B88978C3C667896E16B248CBF71F5C7]}
+Payload: 
+----------------------------------------------
+2020-05-12 15:22:31.939 [http-nio-8080-exec-4] INFO  com.lujieni.logging.filter.LogFilter - Outbound Message
+----------------------------
+ResponseDate: 2020-05-12 15:22:31
+Encoding: UTF-8
+Content-Type: application/json;charset=UTF-8
+Headers: {}
+Payload: [{"id":16,"name":"陆捷旎","age":18,"gender":"男"}]
+----------------------------------------------
+2020-05-12 15:22:31.968 [http-nio-8080-exec-5] INFO  com.lujieni.logging.filter.LogFilter - Inbound Message
+----------------------------
+Address: http://localhost:8080/favicon.ico
+QueryString: null
+RequestDate: 2020-05-12 15:22:31
+Encoding: UTF-8
+Content-Type: null
+Headers: {host=[localhost:8080], connection=[keep-alive], pragma=[no-cache], cache-control=[no-cache], user-agent=[Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36], accept=[image/webp,image/apng,image/*,*/*;q=0.8], sec-fetch-site=[same-origin], sec-fetch-mode=[no-cors], sec-fetch-dest=[empty], referer=[http://localhost:8080/v1/findStudentByName], accept-encoding=[gzip, deflate, br], accept-language=[zh-CN,zh;q=0.9], cookie=[Webstorm-e000a0d0=6b21c971-d5a9-4bf4-80ea-c346503800c8; language=zh-CN; hasGreet=1; JSESSIONID=6B88978C3C667896E16B248CBF71F5C7]}
+Payload: 
+----------------------------------------------
+2020-05-12 15:22:31.968 [http-nio-8080-exec-5] INFO  com.lujieni.logging.filter.LogFilter - Outbound Message
+----------------------------
+ResponseDate: 2020-05-12 15:22:31
+Encoding: ISO-8859-1
+Content-Type: application/octet-stream
+Headers: {}
+----------------------------------------------
+2020-05-12 15:26:44.842 [Thread-10] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4d518b32: startup date [Tue May 12 15:21:12 CST 2020]; root of context hierarchy
+2020-05-12 15:26:44.844 [Thread-10] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
