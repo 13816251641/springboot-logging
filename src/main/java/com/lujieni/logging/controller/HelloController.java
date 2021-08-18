@@ -19,9 +19,10 @@ public class HelloController {
       不使用@Slf4j手工引入也可以,但都是org.slf4j包下的
       private static final Logger logger = LoggerFactory.getLogger(HelloController.class);
     */
+
     @RequestMapping(value = "/hello",method = RequestMethod.GET)
     public String hello(){
-        log.info("hello");
+        log.info("hello123");
         return "hello";
     }
 

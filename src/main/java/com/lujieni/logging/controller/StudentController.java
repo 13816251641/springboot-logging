@@ -1,5 +1,6 @@
 package com.lujieni.logging.controller;
 
+import com.lujieni.logging.domain.po.StudentPO;
 import com.lujieni.logging.domain.vo.StudentVO;
 import com.lujieni.logging.service.IStudentService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,10 +17,8 @@ public class StudentController {
     private IStudentService studentService;
 
     @RequestMapping(value = "/v1/findStudentByName", method = RequestMethod.GET)
-    public List<StudentVO> findStudentByName(){
+    public List<StudentPO> findStudentByName(){
         return studentService.findStudentByName();
     }
-
-
 
 }
